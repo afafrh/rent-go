@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e0b89590.css",
-    "main.js": "/static/js/main.22ff8e3d.js",
+    "main.js": "/static/js/main.30667fb2.js",
     "static/js/453.a5c42dab.chunk.js": "/static/js/453.a5c42dab.chunk.js",
     "static/media/lecco-bike.jpg": "/static/media/lecco-bike.5a0aabba853094032bf5.jpg",
     "static/media/bookingHero.jpg": "/static/media/bookingHero.db21c93f8572f5773696.jpg",
@@ -13,11 +13,11 @@
     "static/media/logo.png": "/static/media/logo.bbd8a07acdcbca0c8fc7.png",
     "index.html": "/index.html",
     "main.e0b89590.css.map": "/static/css/main.e0b89590.css.map",
-    "main.22ff8e3d.js.map": "/static/js/main.22ff8e3d.js.map",
+    "main.30667fb2.js.map": "/static/js/main.30667fb2.js.map",
     "453.a5c42dab.chunk.js.map": "/static/js/453.a5c42dab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e0b89590.css",
-    "static/js/main.22ff8e3d.js"
+    "static/js/main.30667fb2.js"
   ]
 }
