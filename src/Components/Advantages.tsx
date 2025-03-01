@@ -1,33 +1,32 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./Advantages.css";
 
-const advantages = [
-  {
-    title: "Wide Selection of Bikes",
-    description:
-      "We offer a wide range of bikes to suit every need, from city bikes to mountain bikes, electric bikes, and more.",
-  },
-  {
-    title: "Suggested Routes",
-    description:
-      "A map with recommended cycling routes for all skill levels will be provided.",
-  },
-  {
-    title: "Well-Maintained Bikes",
-    description:
-      "All our bikes are carefully inspected and maintained to ensure your safety and comfort throughout your rental.",
-  },
-  {
-    title: "24/7 Support",
-    description:
-      "If you encounter any issues, our team is available to provide quick assistance, wherever you are.",
-  },
-];
-
 const Advantages: React.FC = () => {
+  const { t } = useTranslation();
+
+  const advantages = [
+    {
+      title: t("advantages.wide_selection.title"),
+      description: t("advantages.wide_selection.description"),
+    },
+    {
+      title: t("advantages.suggested_routes.title"),
+      description: t("advantages.suggested_routes.description"),
+    },
+    {
+      title: t("advantages.well_maintained.title"),
+      description: t("advantages.well_maintained.description"),
+    },
+    {
+      title: t("advantages.support.title"),
+      description: t("advantages.support.description"),
+    },
+  ];
+
   return (
     <section className="advantages">
-      <h2 className="section-title">Why Rent with Us?</h2>
+      <h2 className="section-title">{t("why_rent")}</h2>
       <div className="advantages-grid">
         {advantages.map((adv, index) => (
           <div key={index} className="advantage-card">

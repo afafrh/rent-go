@@ -1,0 +1,76 @@
+{
+  "why_rent": "Why Rent with Us?",
+  "advantages": {
+    "wide_selection": {
+      "title": "Wide Selection of Bikes",
+      "description": "We offer a wide range of bikes to suit every need, from city bikes to mountain bikes, electric bikes, and more."
+    },
+    "suggested_routes": {
+      "title": "Suggested Routes",
+      "description": "A map with recommended cycling routes for all skill levels will be provided."
+    },
+    "well_maintained": {
+      "title": "Well-Maintained Bikes",
+      "description": "All our bikes are carefully inspected and maintained to ensure your safety and comfort throughout your rental."
+    },
+    "support": {
+      "title": "24/7 Support",
+      "description": "If you encounter any issues, our team is available to provide quick assistance, wherever you are."
+    }
+  },
+
+  "booking_form": "Booking Form",
+  "duration": "Duration",
+  "select_duration": "Select Duration",
+  "half_day": "Half Day",
+  "full_day": "Full Day",
+  "select_date": "Select Date",
+  "select_time": "Select Time",
+  "select_bike": "Select Your Bike",
+  "helmets_included": "- Helmets are included in the rental price",
+  "child_seats_available": "- Child seats are available upon request only for city bikese",
+  "bike_options": {
+    "city_bike": "City Bike",
+    "child_bike": "Children's Bike",
+    "mountain_bike": "Mountain Bike",
+    "electric_bike": "Electric Bike"
+  },
+  "book_now": "Book Now",
+  "riders": "Number of Riders",
+  "child_seat": "Children’s Seat (Optional)",
+  "yes": "Yes",
+  "no": "No",
+  "contact_information": "Contact Information",
+  "full_name": "Full Name",
+  "email": "Email",
+  "phone": "Phone Number",
+  "note": "Note (Optional)",
+  "confirm_booking": "Confirm Booking",
+  "thank_you": "Thank you for your reservation 🎉 We will reach out to you shortly to confirm your booking.",
+  "return_home": "Return to Home",
+  "booking_hero_title": "Choose your bike and enjoy the ride!",
+  "easy_booking": "Easy Booking",
+  "choose_your_bike": "Choose Your Bike",
+  "choose_your_bike_description": "Browse our collection and select the perfect bike for your journey.",
+  "book_online": "Book Online",
+  "book_online_description": "Select Enter your rental date, time and number of riders",
+  "confirm_your_booking": "Confirm Your Booking",
+  "confirm_your_booking_description": "Our team checks availability and send you a confirmation",
+  "contact_us": "Contact us at:",
+  "our_phone": "📞 +39 331-827-9957",
+  "our_email": "📧 rentandgo.lecco@gmail.com",
+  "hero_title": "The Perfect Bike for Every Ride!",
+  "hero_description": "From city streets to mountain trails, we’ve got the perfect bike for you. Rent hassle-free today!",
+  "location_title": "Location & Pickup Points",
+  "location_description": "We are located in <strong>Lecco</strong>, an ideal city to explore by bike.",
+  "location_pickup_info": "You can easily collect and return your bike.",
+  "location_contact_info": "For more information, feel free to contact us at:",
+  "location_phone": "📞 +39 331-827-9957",
+  "location_address": "Our pickup point address:",
+  "location_map_title": "Lecco Bike Rental Location",
+  "navbar_home": "Home",
+  "our_story_title": "Our Story",
+  "our_story_paragraph_1": "Our journey began with a deep passion for cycling and a love for adventure. We believe that a bike is more than just a mode of transport—it’s a gateway to freedom, exploration, and unforgettable experiences. Whether it’s the thrill of conquering rugged mountain trails, the joy of breezing through city streets, or the simple pleasure of a leisurely ride, we wanted to create something that caters to every rider’s unique journey.",
+  "our_story_paragraph_2": "That’s why our mission is to provide high-quality bikes that empower every explorer. From sleek, reliable commuters designed for urban mobility to durable, high-performance mountain bikes built for the toughest terrains, we ensure that every ride is smooth, comfortable, and built to last.",
+  "our_story_paragraph_3": "No matter where your path leads, we’re here to help you embrace the ride. Join us and discover the world on two wheels—because your next great adventure starts today!"
+}

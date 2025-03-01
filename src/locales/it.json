@@ -1,0 +1,75 @@
+{
+  "why_rent": "Perché Noleggiare con Noi?",
+  "advantages": {
+    "wide_selection": {
+      "title": "Ampia Selezione di Biciclette",
+      "description": "Offriamo una vasta gamma di biciclette per soddisfare ogni esigenza, dalle biciclette da città alle biciclette da montagna, biciclette elettriche e altro."
+    },
+    "suggested_routes": {
+      "title": "Percorsi Consigliati",
+      "description": "Verrà fornita una mappa con i percorsi ciclabili consigliati per tutti i livelli di abilità."
+    },
+    "well_maintained": {
+      "title": "Biciclette Ben Manutenzionate",
+      "description": "Tutte le nostre biciclette vengono accuratamente ispezionate e mantenute per garantire la tua sicurezza e comfort durante il noleggio."
+    },
+    "support": {
+      "title": "Supporto 24/7",
+      "description": "Se riscontri problemi, il nostro team è disponibile per offrire assistenza rapida, ovunque tu sia."
+    }
+  },
+  "booking_form": "Modulo di Prenotazione",
+  "duration": "Durata",
+  "select_duration": "Seleziona Durata",
+  "half_day": "Mezza Giornata",
+  "full_day": "Giornata Intera",
+  "select_date": "Seleziona Data",
+  "select_time": "Seleziona Ora",
+  "select_bike": "Seleziona la tua Bicicletta",
+  "helmets_included": "- I caschi sono inclusi nel prezzo del noleggio",
+  "book_now": "Prenota Ora",
+  "child_seats_available": "- I seggiolini per bambini sono disponibili su richiesta solo per le biciclette da città",
+  "bike_options": {
+    "city_bike": "Bicicletta da Città",
+    "child_bike": "Bicicletta per Bambini",
+    "mountain_bike": "Bicicletta da Montagna",
+    "electric_bike": "Bicicletta Elettrica"
+  },
+  "riders": "Numero di Passeggeri",
+  "child_seat": "Seggiolino per Bambini (Opzionale)",
+  "yes": "Sì",
+  "no": "No",
+  "contact_information": "Informazioni di Contatto",
+  "full_name": "Nome Completo",
+  "email": "Email",
+  "phone": "Numero di Telefono",
+  "note": "Note (Opzionale)",
+  "confirm_booking": "Conferma Prenotazione",
+  "thank_you": "Grazie per la tua prenotazione 🎉 Ti contatteremo presto per confermare la tua prenotazione.",
+  "return_home": "Torna alla Home",
+  "booking_hero_title": "Scegli la tua bicicletta e goditi la corsa!",
+  "easy_booking": "Prenotazione Facile",
+  "choose_your_bike": "Scegli la tua Bicicletta",
+  "choose_your_bike_description": "Sfoglia la nostra collezione e seleziona la bicicletta perfetta per il tuo viaggio.",
+  "book_online": "Prenota Online",
+  "book_online_description": "Seleziona la data, l'ora e il numero di passeggeri per il noleggio.",
+  "confirm_your_booking": "Conferma la tua Prenotazione",
+  "confirm_your_booking_description": "Il nostro team controlla la disponibilità e ti invia una conferma.",
+  "contact_us": "Contattaci a:",
+  "our_phone": "📞 +39 331-827-9957",
+  "our_email": "📧 rentandgo.lecco@gmail.com",
+  "hero_title": "La Bicicletta Perfetta per Ogni Corsa!",
+  "hero_description": "Dalle strade della città ai sentieri di montagna, abbiamo la bicicletta perfetta per te. Noleggia senza stress oggi!",
+  "location_title": "Posizione e Punti di Ritiro",
+  "location_description": "Siamo situati a <strong>Lecco</strong>, una città ideale da esplorare in bicicletta.",
+  "location_pickup_info": "Puoi facilmente ritirare e restituire la tua bicicletta.",
+  "location_contact_info": "Per maggiori informazioni, sentiti libero di contattarci a:",
+  "location_phone": "📞 +39 331-827-9957",
+  "location_address": "Il nostro punto di ritiro:",
+  "location_map_title": "Posizione Noleggio Biciclette Lecco",
+  "navbar_home": "Home",
+  "our_story_title": "La Nostra Storia",
+  "our_story_paragraph_1": "Il nostro viaggio è iniziato con una profonda passione per il ciclismo e un amore per l'avventura. Crediamo che una bicicletta sia più di un semplice mezzo di trasporto: è una porta verso la libertà, l'esplorazione e esperienze indimenticabili. Che si tratti dell'emozione di conquistare sentieri montuosi, della gioia di percorrere le strade della città o del semplice piacere di una pedalata tranquilla, volevamo creare qualcosa che rispondesse al viaggio unico di ogni ciclista.",
+  "our_story_paragraph_2": "Ecco perché la nostra missione è fornire biciclette di alta qualità che possano potenziare ogni esploratore. Dalle biciclette eleganti e affidabili progettate per la mobilità urbana alle biciclette da montagna durevoli e ad alte prestazioni costruite per i terreni più difficili, ci assicuriamo che ogni corsa sia fluida, comoda e costruita per durare.",
+  "our_story_paragraph_3": "Non importa dove ti porti il tuo cammino, siamo qui per aiutarti a vivere il viaggio. Unisciti a noi e scopri il mondo su due ruote, perché la tua prossima grande avventura inizia oggi!"
+}

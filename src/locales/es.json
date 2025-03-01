@@ -1,0 +1,75 @@
+{
+  "why_rent": "¿Por Qué Alquilar con Nosotros?",
+  "advantages": {
+    "wide_selection": {
+      "title": "Amplia Selección de Bicicletas",
+      "description": "Ofrecemos una amplia gama de bicicletas para satisfacer todas las necesidades, desde bicicletas de ciudad hasta bicicletas de montaña, bicicletas eléctricas y más."
+    },
+    "suggested_routes": {
+      "title": "Rutas Sugeridas",
+      "description": "Se proporcionará un mapa con rutas ciclistas recomendadas para todos los niveles de habilidad."
+    },
+    "well_maintained": {
+      "title": "Bicicletas Bien Mantenidas",
+      "description": "Todas nuestras bicicletas son cuidadosamente inspeccionadas y mantenidas para garantizar tu seguridad y comodidad durante el alquiler."
+    },
+    "support": {
+      "title": "Soporte 24/7",
+      "description": "Si encuentras algún problema, nuestro equipo está disponible para brindar asistencia rápida, donde sea que estés."
+    }
+  },
+  "booking_form": "Formulario de Reserva",
+  "duration": "Duración",
+  "select_duration": "Seleccionar Duración",
+  "half_day": "Medio Día",
+  "full_day": "Día Completo",
+  "select_date": "Seleccionar Fecha",
+  "select_time": "Seleccionar Hora",
+  "select_bike": "Selecciona tu Bicicleta",
+  "helmets_included": "- Los cascos están incluidos en el precio del alquiler",
+  "child_seats_available": "- Los asientos para niños están disponibles bajo solicitud solo para bicicletas urbanas",
+  "bike_options": {
+    "city_bike": "Bicicleta de Ciudad",
+    "child_bike": "Bicicleta para Niños",
+    "mountain_bike": "Bicicleta de Montaña",
+    "electric_bike": "Bicicleta Eléctrica"
+  },
+  "book_now": "Reservar Ahora",
+  "riders": "Número de Ciclistas",
+  "child_seat": "Sillín para Niños (Opcional)",
+  "yes": "Sí",
+  "no": "No",
+  "contact_information": "Información de Contacto",
+  "full_name": "Nombre Completo",
+  "email": "Correo Electrónico",
+  "phone": "Número de Teléfono",
+  "note": "Nota (Opcional)",
+  "confirm_booking": "Confirmar Reserva",
+  "thank_you": "Gracias por tu reserva 🎉 Nos pondremos en contacto contigo pronto para confirmar tu reserva.",
+  "return_home": "Volver a la Página Principal",
+  "booking_hero_title": "¡Elige tu bicicleta y disfruta del paseo!",
+  "easy_booking": "Reserva Fácil",
+  "choose_your_bike": "Elige tu Bicicleta",
+  "choose_your_bike_description": "Explora nuestra colección y selecciona la bicicleta perfecta para tu viaje.",
+  "book_online": "Reserva en Línea",
+  "book_online_description": "Selecciona la fecha, hora y número de ciclistas para tu alquiler.",
+  "confirm_your_booking": "Confirma tu Reserva",
+  "confirm_your_booking_description": "Nuestro equipo revisará la disponibilidad y te enviará una confirmación.",
+  "contact_us": "Contáctanos a:",
+  "our_phone": "📞 +39 331-827-9957",
+  "our_email": "📧 rentandgo.lecco@gmail.com",
+  "hero_title": "¡La Bicicleta Perfecta para Cada Paseo!",
+  "hero_description": "Desde las calles de la ciudad hasta los senderos de montaña, tenemos la bicicleta perfecta para ti. ¡Alquila sin complicaciones hoy!",
+  "location_title": "Ubicación y Puntos de Recogida",
+  "location_description": "Estamos ubicados en <strong>Lecco</strong>, una ciudad ideal para explorar en bicicleta.",
+  "location_pickup_info": "Puedes recoger y devolver tu bicicleta fácilmente.",
+  "location_contact_info": "Para más información, no dudes en contactarnos a:",
+  "location_phone": "📞 +39 331-827-9957",
+  "location_address": "Nuestra dirección de punto de recogida:",
+  "location_map_title": "Ubicación de Alquiler de Bicicletas en Lecco",
+  "navbar_home": "Inicio",
+  "our_story_title": "Nuestra Historia",
+  "our_story_paragraph_1": "Nuestro viaje comenzó con una profunda pasión por el ciclismo y un amor por la aventura. Creemos que una bicicleta es más que un simple medio de transporte: es una puerta hacia la libertad, la exploración y experiencias inolvidables. Ya sea la emoción de conquistar senderos montañosos, la alegría de recorrer las calles de la ciudad o el simple placer de un paseo tranquilo, queríamos crear algo que se adaptara al viaje único de cada ciclista.",
+  "our_story_paragraph_2": "Por eso, nuestra misión es proporcionar bicicletas de alta calidad que empoderen a cada explorador. Desde bicicletas elegantes y confiables diseñadas para la movilidad urbana hasta bicicletas de montaña duraderas y de alto rendimiento construidas para los terrenos más difíciles, nos aseguramos de que cada paseo sea fluido, cómodo y construido para durar.",
+  "our_story_paragraph_3": "No importa dónde te lleve tu camino, estamos aquí para ayudarte a disfrutar del viaje. Únete a nosotros y descubre el mundo sobre dos ruedas, porque tu próxima gran aventura comienza hoy!"
+}

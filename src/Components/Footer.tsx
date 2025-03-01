@@ -1,7 +1,11 @@
+import React from "react";
 import logo from "../assets/logo.png";
 import "./Footer.css";
+import { useTranslation } from "react-i18next"; // Import translation hook
 
 const Footer = () => {
+  const { t } = useTranslation(); // Get translation function
+
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -9,9 +13,9 @@ const Footer = () => {
           <img src={logo} alt="Your Logo" className="logo" />
         </div>
         <div className="footer-contact">
-          <p>Contact us at:</p>
-          <p>📞 +39 331-827-9957</p>
-          <p>📧 email@example.com</p>
+          <p>{t("contact_us")}</p>
+          <p>{t("our_phone")}</p>
+          <p>{t("our_email")}</p>
         </div>
         <div className="footer-socials">
           <a

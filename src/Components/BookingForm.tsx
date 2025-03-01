@@ -1,8 +1,11 @@
 import React, { useState } from "react";
-import emailjs from "@emailjs/browser"; // Import EmailJS
+import { useTranslation } from "react-i18next";
+import emailjs from "@emailjs/browser";
 import "./BookingForm.css";
 
 const BookingForm = () => {
+  const { t } = useTranslation();
+
   const [formData, setFormData] = useState({
     duration: "",
     date: "",
@@ -15,6 +18,7 @@ const BookingForm = () => {
     phone: "",
     note: "",
   });
+
   const [formSubmitted, setFormSubmitted] = useState(false);
 
   const handleChange = (
@@ -32,61 +36,31 @@ const BookingForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Send email to the business owner
     emailjs
       .send(
-        "service_9rqzk2b",
-        "template_2gg2j4n",
-        {
-          duration: formData.duration,
-          date: formData.date,
-          time: formData.time,
-          bike: formData.bike,
-          riders: formData.riders,
-          childSeat: formData.childSeat,
-          fullName: formData.fullName,
-          email: formData.email,
-          phone: formData.phone,
-          note: formData.note,
-        },
-        "1qPYXYDHFGCKyXosD"
+        "service_16pucj2",
+        "template_8vasc6k",
+        { ...formData },
+        "ZbQ4XA8u2oOGkDeOC"
       )
       .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
+        (result) => console.log(result.text),
+        (error) => console.log(error.text)
       );
 
-    // Send email to the user using the new template ID
     emailjs
       .send(
-        "service_9rqzk2b", // Same service ID
-        "template_44eusuc", // Updated template ID for user confirmation email
-        {
-          duration: formData.duration,
-          date: formData.date,
-          time: formData.time,
-          bike: formData.bike,
-          riders: formData.riders,
-          childSeat: formData.childSeat,
-          fullName: formData.fullName,
-          email: formData.email,
-          phone: formData.phone,
-          note: formData.note,
-        },
-        "1qPYXYDHFGCKyXosD" // Your public key
+        "service_16pucj2",
+        "template_zrh1jdo",
+        { ...formData },
+        "ZbQ4XA8u2oOGkDeOC"
       )
       .then(
         (result) => {
           console.log(result.text);
-          setFormSubmitted(true); // Display thank you message after successful submission
+          setFormSubmitted(true);
         },
-        (error) => {
-          console.log(error.text);
-        }
+        (error) => console.log(error.text)
       );
   };
 
@@ -94,10 +68,9 @@ const BookingForm = () => {
     <div className="booking-container">
       {!formSubmitted ? (
         <form className="booking-form" onSubmit={handleSubmit}>
-          <h2>Booking Form</h2>
+          <h2>{t("booking_form")}</h2>
 
-          {/* Duration */}
-          <label htmlFor="duration">Duration*</label>
+          <label htmlFor="duration">{t("duration")}*</label>
           <select
             id="duration"
             name="duration"
@@ -105,13 +78,12 @@ const BookingForm = () => {
             onChange={handleChange}
             required
           >
-            <option value="">Select Duration</option>
-            <option value="Half Day">Half Day</option>
-            <option value="Full Day">Full Day</option>
+            <option value="">{t("select_duration")}</option>
+            <option value="Half Day">{t("half_day")}</option>
+            <option value="Full Day">{t("full_day")}</option>
           </select>
 
-          {/* Date */}
-          <label htmlFor="date">Select Date*</label>
+          <label htmlFor="date">{t("select_date")}*</label>
           <input
             type="date"
             id="date"
@@ -121,8 +93,7 @@ const BookingForm = () => {
             required
           />
 
-          {/* Time */}
-          <label htmlFor="time">Select Time*</label>
+          <label htmlFor="time">{t("select_time")}*</label>
           <input
             type="time"
             id="time"
@@ -132,8 +103,7 @@ const BookingForm = () => {
             required
           />
 
-          {/* Bike */}
-          <label htmlFor="bike">Select Your Bike*</label>
+          <label htmlFor="bike">{t("select_bike")}*</label>
           <select
             id="bike"
             name="bike"
@@ -141,15 +111,20 @@ const BookingForm = () => {
             onChange={handleChange}
             required
           >
-            <option value="">Select Bike</option>
-            <option value="City Bike">City Bike</option>
-            <option value="Children's Bike">Children's Bike</option>
-            <option value="Mountain Bike">Mountain Bike</option>
-            <option value="Electric Bike">Electric Bike</option>
+            <option value="">{t("select_bike")}</option>
+            <option value="City Bike">{t("bike_options.city_bike")}</option>
+            <option value="Children's Bike">
+              {t("bike_options.child_bike")}
+            </option>
+            <option value="Mountain Bike">
+              {t("bike_options.mountain_bike")}
+            </option>
+            <option value="Electric Bike">
+              {t("bike_options.electric_bike")}
+            </option>
           </select>
 
-          {/* Number of Riders */}
-          <label htmlFor="riders">Number of Riders*</label>
+          <label htmlFor="riders">{t("riders")}*</label>
           <input
             type="number"
             id="riders"
@@ -160,8 +135,7 @@ const BookingForm = () => {
             min="1"
           />
 
-          {/* Children’s Seat */}
-          <label>Children’s Seat (Optional)</label>
+          <label>{t("child_seat")}</label>
           <div className="radio-group">
             <label>
               <input
@@ -170,8 +144,8 @@ const BookingForm = () => {
                 value="Yes"
                 onChange={handleChange}
                 checked={formData.childSeat === "Yes"}
-              />
-              Yes
+              />{" "}
+              {t("yes")}
             </label>
             <label>
               <input
@@ -180,13 +154,15 @@ const BookingForm = () => {
                 value="No"
                 onChange={handleChange}
                 checked={formData.childSeat === "No"}
-              />
-              No
+              />{" "}
+              {t("no")}
             </label>
           </div>
 
           {/* Contact Information */}
-          <label htmlFor="fullName">Full Name*</label>
+          <h3>{t("contact_information")}</h3>
+
+          <label htmlFor="fullName">{t("full_name")}*</label>
           <input
             type="text"
             id="fullName"
@@ -196,7 +172,7 @@ const BookingForm = () => {
             required
           />
 
-          <label htmlFor="email">Email*</label>
+          <label htmlFor="email">{t("email")}*</label>
           <input
             type="email"
             id="email"
@@ -206,7 +182,7 @@ const BookingForm = () => {
             required
           />
 
-          <label htmlFor="phone">Phone Number*</label>
+          <label htmlFor="phone">{t("phone")}*</label>
           <input
             type="tel"
             id="phone"
@@ -216,7 +192,7 @@ const BookingForm = () => {
             required
           />
 
-          <label htmlFor="note">Note (Optional)</label>
+          <label htmlFor="note">{t("note")}</label>
           <textarea
             id="note"
             name="note"
@@ -224,22 +200,18 @@ const BookingForm = () => {
             onChange={handleChange}
           ></textarea>
 
-          {/* Submit Button */}
           <button type="submit" className="submit-btn">
-            Confirm Booking
+            {t("confirm_booking")}
           </button>
         </form>
       ) : (
         <div className="thank-you-message">
-          <p>
-            Thank you for your reservation 🎉 We will reach out to you shortly
-            to confirm your booking.
-          </p>
+          <p>{t("thank_you")}</p>
           <button
             onClick={() => (window.location.href = "/")}
             className="return-home-btn"
           >
-            Return to Home
+            {t("return_home")}
           </button>
         </div>
       )}

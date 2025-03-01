@@ -1,30 +1,32 @@
 import React from "react";
+import { useTranslation } from "react-i18next"; // Import the hook
 import "./EasyBooking.css";
 
 const steps = [
   {
     number: 1,
-    title: "Choose Your Bike",
-    description:
-      "Browse our collection and select the perfect bike for your journey.",
+    titleKey: "choose_your_bike",
+    descriptionKey: "choose_your_bike_description",
   },
   {
     number: 2,
-    title: "Book Online",
-    description: "Select Enter your rental date, time and number of riders",
+    titleKey: "book_online",
+    descriptionKey: "book_online_description",
   },
   {
     number: 3,
-    title: "Confirm Your Booking",
-    description: "Our team checks availability and send you a confirmation ",
+    titleKey: "confirm_your_booking",
+    descriptionKey: "confirm_your_booking_description",
   },
 ];
 
 const EasyBooking: React.FC = () => {
+  const { t } = useTranslation(); // Initialize the translation hook
+
   return (
     <section className="easy-booking">
       <div className="background-image"></div>
-      <h2 className="booking-title">Easy Booking</h2>
+      <h2 className="booking-title">{t("easy_booking")}</h2>{" "}
       {steps.map((step, index) => (
         <div
           key={step.number}
@@ -33,8 +35,8 @@ const EasyBooking: React.FC = () => {
           {index % 2 === 0 ? ( // Left step → Number on right
             <>
               <div className="step-content">
-                <h3>{step.title}</h3>
-                <p>{step.description}</p>
+                <h3>{t(step.titleKey)}</h3>
+                <p>{t(step.descriptionKey)}</p>
               </div>
               <div className="step-number">{step.number}</div>
             </>
@@ -42,8 +44,8 @@ const EasyBooking: React.FC = () => {
             // Right step → Number on left
             <>
               <div className="step-content">
-                <h3>{step.title}</h3>
-                <p>{step.description}</p>
+                <h3>{t(step.titleKey)}</h3>
+                <p>{t(step.descriptionKey)}</p>
               </div>
               <div className="step-number">{step.number}</div>
             </>
