@@ -1,0 +1,129 @@
+/* Cards Section */
+.card-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  /* Move Cards Up */
+  margin-top: -8%;
+  position: relative;
+  z-index: 10; /* Ensure it stays above the Hero */
+}
+
+.card {
+  background-color: #ff924b;
+  border-radius: 26px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 22%; /* Each card takes 22% on desktop */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; /* Center content horizontally */
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.card-image {
+  width: 70%; /* Make the bike smaller */
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-price {
+  font-size: 1.25rem;
+  margin: 0.25rem 0;
+}
+.booking-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  margin: 2rem 4rem;
+}
+
+/* Ensures text is aligned properly */
+.booking-content {
+  text-align: start;
+  padding-left: 2rem;
+}
+
+/* Button styles */
+.button {
+  background-color: rgba(195, 97, 44, 0.58);
+  color: black;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 15%;
+  height: 3rem;
+}
+
+.button:hover {
+  background-color: rgba(195, 97, 44, 0.8);
+}
+
+@media (max-width: 768px) {
+  .booking-section {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin: 2rem;
+  }
+
+  .booking-content {
+    padding-left: 0; /* Remove left padding for mobile */
+    text-align: center;
+  }
+
+  .button {
+    width: 50%; /* Make button wider for mobile */
+  }
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1000px) {
+  .card-section {
+    padding: 2rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0; /* Reset margin on mobile */
+  }
+
+  .card {
+    width: 90%; /* Full width on mobile */
+    margin-bottom: 2rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 0.8rem;
+  }
+
+  .card-image {
+    width: 40%; /* Normal size on mobile */
+    height: auto;
+    margin-right: 1rem;
+    border-radius: 8px;
+  }
+
+  .card-content {
+    width: 60%;
+  }
+}

@@ -1,0 +1,28 @@
+/* Default Navbar styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar .logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar .logo {
+  height: 60px; /* Adjust logo size */
+}
+
+/* Transparent background for Home Page */
+.navbar.transparent {
+  background-color: transparent;
+}
+
+/* Colored background for other pages */
+.navbar.colored {
+  background-color: #499da6;
+}

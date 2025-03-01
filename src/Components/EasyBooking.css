@@ -1,0 +1,115 @@
+.easy-booking {
+  background-color: #499da6;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: url("../assets/road.png");*/
+  background-size: cover;
+  background-position: center;
+  /*opacity: 0.2;  Light fade effect */
+}
+
+.booking-title {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.booking-step {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 0px 50px;
+  background-color: white;
+  width: 600px; /* Increased width */
+  min-height: 120px; /* Increased height */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.left {
+  align-self: flex-start;
+  flex-direction: row; /* Content first, number second */
+}
+
+.right {
+  align-self: flex-end;
+  flex-direction: row-reverse; /* Number first, content second */
+  .step-content {
+    text-align: right;
+  }
+}
+
+.step-number {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #499da6;
+  width: 60px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-content {
+  flex: 1;
+  text-align: left;
+}
+
+.step-content h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #c3612c;
+}
+
+.step-content p {
+  margin: 0.5rem 0 0;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .easy-booking {
+    padding: 4rem 2rem;
+  }
+  .booking-step {
+    align-self: center;
+    flex-direction: column !important;
+    text-align: center;
+    width: 90%;
+  }
+
+  .step-number {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .background-image {
+    width: 100%;
+    height: 30%;
+  }
+
+  .step-content {
+    text-align: center;
+  }
+
+  .right {
+    .step-content {
+      text-align: center;
+    }
+  }
+}
