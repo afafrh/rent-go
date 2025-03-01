@@ -1,5 +1,8 @@
 import "./CardSection.css";
-import bike from "../assets/bike.png";
+import cityBike from "../assets/cityBike.png";
+import childrenBike from "../assets/childrenBike.png";
+import mountainBike from "../assets/mountainBike.png";
+import electricBike from "../assets/electricBike.png";
 import { useNavigate } from "react-router-dom";
 
 const CardSection = () => {
@@ -7,25 +10,25 @@ const CardSection = () => {
   const bikeData = [
     {
       title: "City Bike",
-      img: bike,
+      img: cityBike,
       halfDayPrice: "20€",
       fullDayPrice: "35€",
     },
     {
-      title: "Childre's Bike",
-      img: bike,
+      title: "Children's Bike",
+      img: childrenBike,
       halfDayPrice: "20€",
       fullDayPrice: "35€",
     },
     {
       title: "Electric Bike",
-      img: bike,
+      img: electricBike,
       halfDayPrice: "40€",
       fullDayPrice: "60€",
     },
     {
       title: "Mountain Bike",
-      img: bike,
+      img: mountainBike,
       halfDayPrice: "25€",
       fullDayPrice: "40€",
     },

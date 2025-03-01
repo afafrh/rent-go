@@ -142,8 +142,9 @@ const BookingForm = () => {
             required
           >
             <option value="">Select Bike</option>
+            <option value="City Bike">City Bike</option>
+            <option value="Children's Bike">Children's Bike</option>
             <option value="Mountain Bike">Mountain Bike</option>
-            <option value="Road Bike">Road Bike</option>
             <option value="Electric Bike">Electric Bike</option>
           </select>
 
